@@ -8,7 +8,7 @@ len(List) ->
 
 len([], _Acc) ->
     0;
-len([H|[]], Acc) ->
+len([_H|[]], Acc) ->
     Acc+1;
 len([_|T], Acc) ->
     len(T, Acc+1).
